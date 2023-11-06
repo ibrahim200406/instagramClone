@@ -1,0 +1,37 @@
+.custom-right-arrow {
+    position: absolute;
+    right: 20px;
+    top: 27%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px !important;
+    border-radius: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.custom-left-arrow {
+    position: absolute;
+    left: 20px;
+    top: 27%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px !important;
+    border-radius: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.arrowIcon {
+    color: white;
+}
+
+/* ! Responsive */
+
+@media(max-width:991px) {
+
+    .custom-left-arrow,
+    .custom-right-arrow {
+        display: none;
+    }
+}

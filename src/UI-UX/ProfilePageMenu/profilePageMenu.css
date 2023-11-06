@@ -1,0 +1,68 @@
+.backdropProfileMenu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.107);
+    z-index: 1000000000;
+}
+
+.menu {
+    position: absolute;
+    width: 27%;
+    height: 50%;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    z-index: 1000000001;
+
+}
+
+
+
+.menu .menu-bar {
+    padding-bottom: 10px;
+}
+
+.menu .menu-content {
+    height: 85%;
+    overflow-y: auto;
+
+}
+
+
+
+.menu .menu-content .profileMenu .menu-item button {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: rgba(239, 239, 239);
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 0.4rem 1rem;
+    margin-right: 10px;
+}
+
+.menu .menu-content .profileMenu .menu-item button:hover {
+    background-color: rgb(225, 225, 225);
+
+}
+
+/* ! Responsive */
+@media(max-width:991px) {
+    .menu {
+        width: 60%;
+        height: 45%;
+
+    }
+}
+
+@media(max-width:758px) {
+    .menu {
+        width: 80%;
+        height: 60%;
+
+    }
+}

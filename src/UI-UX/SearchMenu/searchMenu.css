@@ -1,0 +1,94 @@
+.searchMenuBackDrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.283);
+}
+
+.search-area {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    width: 350px;
+    top: 0;
+    background-color: white;
+    border-right: 1px solid #dedede;
+    z-index: 10000;
+}
+
+.search-area .searchForm {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 2rem;
+}
+
+.search-area .searchForm form input {
+    background-color: #f4f4f4f4;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+}
+
+.search-area .searchForm form button {
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 100%;
+}
+
+.search-area .searchForm form button:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.search-area .searchForm form button .clearInput {
+    color: white;
+    font-size: 11px;
+
+}
+
+.search-area .searchForm form input:focus {
+    outline: none;
+}
+
+.search-area .search-content {
+    height: auto;
+    overflow-y: scroll;
+
+}
+
+.search-area .search-content .filtered-user {
+    border-radius: 10px;
+    padding: 7px 0px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.search-area .search-content .filtered-user:hover {
+    background-color: #e7e6e6f4;
+    padding: 7px 10px;
+
+}
+
+.search-area .search-content .filtered-user .profile-image img {
+    width: 45px !important;
+}
+
+.search-area .search-content .filtered-user .profile-infos .username {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0 !important;
+    height: 15px;
+}
+
+.search-area .search-content .filtered-user .profile-infos .fullName {
+    font-size: 13px;
+    margin-bottom: 0 !important;
+}

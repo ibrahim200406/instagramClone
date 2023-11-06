@@ -1,0 +1,44 @@
+.homePageWrapper {
+    margin-left: 250px;
+    padding: 0 4rem;
+}
+
+.homePageWrapper .right {
+    padding: 2.5rem;
+}
+
+.homePageWrapper .left {
+    padding: 2.5rem 2rem;
+}
+
+/* !Responsive */
+@media(max-width:991px) {
+    .homePageWrapper {
+        margin-left: 80px;
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        padding: 0;
+    }
+
+    .homePageWrapper .left {
+        padding: 2.5rem 3rem;
+    }
+
+    .homePageWrapper .right {
+        display: none;
+    }
+}
+
+@media(max-width:758px) {
+    .homePageWrapper {
+        margin-left: 0px;
+
+    }
+
+    .homePageWrapper .left {
+        padding: 3.5rem 0.1rem;
+    }
+
+    .homePageWrapper .right {
+        display: none;
+    }
+}

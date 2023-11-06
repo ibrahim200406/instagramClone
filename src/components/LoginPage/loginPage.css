@@ -1,0 +1,225 @@
+.login-form-wrapper {
+    padding-bottom: 1rem !important;
+}
+
+.login-form-wrapper .login-form-image {
+    width: 120%;
+    position: relative;
+}
+
+.login-form-wrapper .login-form-image .ss {
+    position: absolute;
+    top: 30px;
+    right: 62px;
+    transition: all .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+}
+
+.login-form-wrapper .login-form-image .ss.active {
+    opacity: 1;
+}
+
+.fade-enter,
+.fade-exit {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fade-enter-active,
+.fade-exit-done {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.login-form-wrapper .login-form .top {
+    border: 1px solid #dedede;
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.login-form-wrapper .login-form .top .instagram-text-logo {
+    width: 180px;
+    margin-bottom: 2rem;
+}
+
+.login-form-wrapper .login-form .top form {
+    border-bottom: 2px solid #dedede;
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.login-form-wrapper .login-form .top form span {
+    position: absolute;
+    bottom: -10px;
+    color: #646363;
+    right: 50%;
+    transform: translate(50%);
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    padding: 0 18px;
+}
+
+.login-form-wrapper .login-form .top form input {
+    border: 1px solid #dedede !important;
+    background-color: rgba(250, 250, 250) !important;
+    padding: 0.5rem 0.8rem;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: black !important;
+    margin-bottom: 0.5rem;
+}
+
+.login-form-wrapper .login-form .top form input:focus {
+    border: 1px solid #959595 !important;
+    outline: none;
+}
+
+.login-form-wrapper .login-form .top form input::placeholder {
+
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: #828282 !important;
+}
+
+.login-form-wrapper .login-form .top form button {
+    background-color: #4CB5F9;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    color: white;
+    border-radius: 7px;
+    margin-top: 0.5rem;
+}
+
+.login-form-wrapper .login-form .top .otherLoginOptions a {
+    color: #415F9B;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-form-wrapper .login-form .top .otherLoginOptions a img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.login-form-wrapper .login-form .top .forgotPasswordLink {
+    font-size: 13px !important;
+    margin: 1rem 0;
+}
+
+
+.login-form-wrapper .login-form .bottom .register-link {
+    padding: 1.3rem;
+    border: 1px solid #dedede;
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.login-form-wrapper .login-form .bottom .register-link .signUp {
+    font-weight: 600;
+    margin-left: 5px;
+    color: #5295F6;
+}
+
+.login-form-wrapper .login-form .bottom .app-section .title {
+    font-size: 15px;
+}
+
+.login-form-wrapper .login-form .bottom .app-section .appLinks a img {
+    height: 40px;
+}
+
+.login-form-wrapper .login-form .bottom .app-section .appLinks a img:first-child {
+    margin-right: 10px;
+}
+
+.bottom .submenu .submenuLinks .submenu-link {
+    margin-right: 15px;
+    width: 100%;
+    font-size: 12px;
+    color: rgba(115, 115, 115);
+}
+
+.bottom .submenu .submenuLinks .submenu-link a {
+    display: flex;
+    width: max-content;
+}
+
+.bottom .submenu .submenuLinks .submenu-link a:hover {
+    text-decoration: underline;
+}
+
+.bottom .copyright {
+    margin-right: 15px;
+    width: 100%;
+    font-size: 12px;
+    color: rgba(115, 115, 115);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+
+
+/* !Responsive */
+
+@media(min-width:1800px) {
+    .login-form-wrapper {
+        padding: 7rem 30rem 0rem 30rem !important;
+    }
+
+    .bottom.px-80 {
+        padding: 0 30rem !important;
+    }
+}
+
+@media(max-width:991px) {
+    .login-form-wrapper .login-form-image {
+        display: none;
+    }
+
+    .login-form-wrapper {
+        padding: 7rem 12rem 0rem 12rem !important;
+    }
+
+    .bottom.px-80 {
+        padding: 7rem 2rem !important;
+    }
+
+    .bottom .submenu .submenuLinks {
+        justify-content: space-between;
+    }
+
+    .bottom .submenu .submenuLinks .submenu-link {
+        margin-right: unset;
+        width: unset;
+    }
+}
+
+@media(max-width:758px) {
+    .login-form {
+        padding-right: 0rem !important;
+    }
+
+    .login-form-wrapper {
+        padding: 2rem 0rem !important;
+    }
+
+    .bottom.px-80 {
+        display: none;
+    }
+
+    .login-form-wrapper .login-form .top {
+        border: 0px solid #dedede;
+    }
+
+
+    .login-form-wrapper .login-form .bottom .register-link {
+        border: 0px solid #dedede;
+    }
+
+}

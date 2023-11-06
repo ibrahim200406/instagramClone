@@ -1,0 +1,36 @@
+.explore-page-wrapper {
+    margin-left: 250px;
+}
+
+
+.explore-page-wrapper .explore-item .post-item-backdrop {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.explore-page-wrapper .explore-item:hover .post-item-backdrop {
+    visibility: visible;
+}
+
+.explore-page-wrapper .explore-item .postDetailBackDrop {
+
+    background-color: rgba(0, 0, 0, 0.169);
+}
+
+/* ! Responsive */
+@media(max-width:991px) {
+    .explore-page-wrapper {
+        margin-left: 80px;
+        padding: 0 !important;
+    }
+}
+
+@media(max-width:758px) {
+    .explore-page-wrapper {
+        margin-left: 0 !important;
+        padding-top: 65px !important;
+    }
+}

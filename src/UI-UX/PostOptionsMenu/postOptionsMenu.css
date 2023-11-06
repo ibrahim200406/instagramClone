@@ -1,0 +1,75 @@
+.postOptionsMenuWrapper {
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000000000;
+}
+
+
+.postOptionsMenuWrapper.visible {
+    visibility: visible;
+
+}
+
+.postOptionsMenuWrapper .backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.457);
+    z-index: 100;
+    position: absolute;
+}
+
+.red {
+    color: red !important;
+    font-weight: 700;
+}
+
+.postOptionsMenu {
+    width: 400px;
+    color: black;
+    font-size: 14px;
+    height: fit-content;
+    border-radius: 25px;
+    background-color: white;
+    z-index: 100000;
+}
+
+.postOptionsMenu .menu-link {
+    padding: 0.8rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postOptionsMenu .menu-link:not(:last-child) {
+    border-bottom: 1px solid #dedede;
+}
+
+.postOptionsMenu .menu-link a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* !Responsive */
+
+@media(max-width:758px) {
+    .postOptionsMenu {
+        width: 320px;
+        color: black;
+        font-size: 14px;
+        height: fit-content;
+        border-radius: 25px;
+        background-color: white;
+        z-index: 100000;
+    }
+
+}

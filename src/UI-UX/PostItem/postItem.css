@@ -1,0 +1,126 @@
+.postItem-wrapper {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 15px;
+    margin: 25px 0;
+}
+
+.postItem-wrapper .post-top {
+    margin-bottom: 10px;
+}
+
+.postItem-wrapper .post-top .post-author .username {
+    font-weight: 600;
+    font-size: 15px;
+    height: 19px;
+}
+
+.postItem-wrapper .post-top .post-author .usernameAndUpdatedTime {
+    height: 19px;
+}
+
+.postItem-wrapper .post-top .post-author .username .time {
+    position: relative;
+    font-size: 15px;
+    color: #737373;
+    margin-left: 15px;
+    font-weight: 400 !important;
+}
+
+.postItem-wrapper .post-top .post-author .username .time:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -30%;
+    border: 1px solid #737373;
+    background-color: #737373;
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+}
+
+.postItem-wrapper .post-top .post-author .loaction {
+    font-size: 12px;
+}
+
+
+.postItem-wrapper .post-bottom {
+    margin-top: 0.7rem;
+}
+
+.postItem-wrapper .post-bottom .reactions {
+    margin-bottom: 3px;
+}
+
+.postItem-wrapper .post-bottom .reactions button:not(:last-child) {
+    margin-right: 20px;
+}
+
+.postItem-wrapper .post-bottom .reactions button {
+    font-size: 25px;
+    transition: all .1s ease-in-out;
+}
+
+.postItem-wrapper .post-bottom .reactions button:hover {
+    opacity: 0.5;
+}
+
+.postItem-wrapper .post-bottom .likeCount {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.postItem-wrapper .post-bottom .post-description {
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.postItem-wrapper .post-bottom .post-description a {
+    display: inline;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all .1s ease-in-out;
+}
+
+.postItem-wrapper .post-bottom .post-description a:hover {
+    color: #737373;
+}
+
+.postItem-wrapper .post-bottom .post-description p {
+    display: inline;
+    font-size: 14px;
+}
+
+.postItem-wrapper .post-bottom .viewAllComment {
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgba(115, 115, 115);
+}
+
+.postItem-wrapper .post-bottom .addCommentForm {
+    margin-top: 5px;
+
+}
+
+.postItem-wrapper .post-bottom .addCommentForm input {
+    border: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.postItem-wrapper .post-bottom .addCommentForm input:focus {
+    border: none;
+    outline: none;
+}
+
+.postItem-wrapper .post-bottom .addCommentForm button {
+    font-size: 14px !important;
+}
+
+/* ! Responsive */
+@media(max-width:758px) {
+
+    .postItem-wrapper .post-top,
+    .postItem-wrapper .post-bottom {
+        padding: 0 0.7rem;
+    }
+}

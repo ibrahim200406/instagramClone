@@ -1,0 +1,48 @@
+.notificationsMenuBackdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.283);
+}
+
+.notifications-area {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    width: 350px;
+    top: 0;
+    background-color: white;
+    border-right: 1px solid #dedede;
+    z-index: 10000;
+    overflow-y: scroll;
+}
+
+.notifications-area .notification-image img {
+    width: 65px !important;
+    border-radius: 0;
+}
+
+.notifications-area .notification-image img.rounded-full {
+    border-radius: 100%;
+}
+
+@media(max-width:758px) {
+    .notifications-area .notification .notification-text .text-sm {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .notifications-area .notification .notification-text .text-sm strong  {
+       margin: 0 2px;
+    }
+
+    .notifications-area .notification .notification-text .text-sm strong a {
+        display: block;
+        width: max-content !important;
+        font-size: 14px !important;
+    }
+}

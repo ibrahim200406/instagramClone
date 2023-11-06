@@ -1,0 +1,79 @@
+/* ? Current User Profile */
+
+.current-user-profile {
+    margin-top: 1rem;
+}
+
+.current-user-profile .profile-image {
+    width: 55px;
+}
+
+.current-user-profile .profile-image a img {
+    width: 55px;
+}
+
+.current-user-profile .infos .profile-info .username {
+    font-weight: 600;
+    height: 19px;
+    font-size: 14px;
+}
+
+.current-user-profile .infos .profile-info .profile-fullName {
+    color: #7B7B7B;
+    font-size: 14px;
+}
+
+/* ? Suggested */
+.suggested .title {
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.suggested .title h1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #747474;
+}
+
+.suggested button {
+    font-size: 12px;
+    color: #747474;
+    font-weight: 600;
+}
+
+/* ? Bottom Navbar  */
+.bottom-navbar {
+    margin-top: 1rem;
+}
+
+.bottom-navbar .links .link {
+    margin-right: 10px;
+    position: relative;
+}
+
+.bottom-navbar .links .link a:hover {
+    text-decoration: underline;
+}
+
+.bottom-navbar .links .link::before {
+    content: "";
+
+    position: absolute;
+    right: -6px;
+    top: 60%;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    background-color: #C7C7C7;
+
+}
+
+.bottom-navbar .links .link a {
+    color: #C7C7C7;
+    font-size: 12px;
+}
+
+.bottom-navbar span {
+    color: #C7C7C7;
+    font-size: 14px;
+}

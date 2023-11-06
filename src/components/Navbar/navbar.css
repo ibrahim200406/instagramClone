@@ -1,0 +1,284 @@
+.navbar {
+    border-right: 1px solid rgb(199, 199, 199);
+    background-color: white;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    padding: 2.5rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 100;
+}
+
+.navbar .instagramLogo {
+    display: none;
+}
+
+.navbar .logo-wrapper {
+    margin-bottom: 2.5rem;
+    padding-left: 5px;
+}
+
+.navbar .logo-wrapper img {
+    width: 110px;
+}
+
+
+
+.navbar ul {
+    width: 100%;
+}
+
+.navbar ul li {
+    margin-bottom: 6px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.7rem 10px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    transition: all .2s ease-in-out;
+}
+
+.navbar ul li a.active {
+    font-weight: 700;
+}
+
+.navbar ul li:hover .menuIcon {
+    transform: scale(1.08);
+}
+
+.navbar ul li:hover {
+    background-color: rgb(0, 0, 0, .05);
+}
+
+.navbar ul li .menuIcon {
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.navbar ul li .shareIcon {
+    position: absolute;
+    display: none;
+    right: 10px;
+    font-size: 22px;
+    color: rgb(50, 50, 50);
+    transition: all .2s ease-in-out;
+}
+
+.navbar ul li:hover .shareIcon {
+    display: flex;
+}
+
+.navbar ul li img {
+    width: 30px;
+    border-radius: 100%;
+}
+
+.navbar .sub-menu-links {
+    margin-top: auto;
+}
+
+/* * Navbar menu more menu */
+
+.navbar .sub-menu-links .moreSubMenu {
+    background-color: white;
+    width: 260px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 38px -20px rgba(0, 0, 0, 0.75);
+}
+
+.navbar .sub-menu-links .moreMenuWrapper {
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    bottom: 15px;
+}
+
+.navbar .sub-menu-links .moreSubMenu .menu-item a .menuLinkText {
+    font-size: 14px !important;
+
+}
+
+.navbar .sub-menu-links .moreSubMenu .menu-item a .menuIcon {
+    font-size: 20px !important;
+}
+
+.navbar .sub-menu-links .moreSubMenu .top {
+    border-bottom: 5px solid #F4F4F4;
+    padding: 0.5rem;
+}
+
+.navbar .sub-menu-links .moreSubMenu .bottom {
+    padding: 0.5rem;
+
+}
+
+.navbar .sub-menu-links .menu-item:hover .menuIcon {
+    transform: scale(1);
+}
+
+/* ! Responsive start */
+@media(max-width:991px) {
+    .navbar {
+        width: 80px;
+    }
+
+    .navbar .logo-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .logo-wrapper a .instagramLogo {
+        font-size: 25px;
+    }
+
+    .navbar .instagramTextLogo {
+        display: none;
+    }
+
+    .navbar .instagramLogo {
+        display: block;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+    }
+
+    .navbar ul li .menu-link {
+        justify-content: center;
+    }
+
+    .navbar ul li .menuIcon {
+        margin-right: 0px !important;
+    }
+
+    .navbar ul li:hover .shareIcon {
+        display: none;
+    }
+
+    .navbar ul li .menuLinkText {
+        display: none;
+    }
+
+    .navbar .sub-menu-links .moreSubMenu {
+        left: 3.5rem;
+        bottom: 0;
+    }
+
+    .navbar .sub-menu-links .moreSubMenu .menu-item .menuLinkText {
+        display: block;
+    }
+
+    .navbar .sub-menu-links .moreSubMenu .menu-item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .navbar .sub-menu-links .moreSubMenu .menu-item .menuIcon {
+        margin-right: 1rem !important;
+    }
+
+    .navbar ul li img {
+        margin-right: 0px !important;
+    }
+
+    .navbar ul li .menuIcon {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:758px) {
+    .navbar {
+        border-top: 1px solid rgb(199, 199, 199);
+        border-right: 0px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .navbar .logo-wrapper {
+        display: none;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar ul li {
+        margin-bottom: 0;
+    }
+
+    .navbar ul li:hover {
+        background-color: white;
+    }
+
+    .navbar ul li .menuIcon {
+        font-size: 27px;
+    }
+
+    .navbar ul .explore,
+    .navbar ul .notifications,
+    .navbar ul .create {
+        display: none;
+    }
+
+    .navbar .sub-menu-links {
+        display: none;
+    }
+
+}
+
+/* ?Mobile navbar start */
+
+.mobile-navbar {
+    display: none !important;
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid rgba(199, 199, 199);
+    z-index: 10000;
+}
+
+.mobile-navbar .logo-wrapper img {
+    width: 110px;
+}
+
+.mobile-navbar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-navbar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-navbar ul li .menuIcon {
+    margin-right: 0.5rem;
+    font-size: 28px;
+}
+
+@media(max-width:758px) {
+    .mobile-navbar {
+        display: flex !important;
+    }
+
+    .mobile-navbar ul li a {
+        font-size: 25px;
+    }
+}

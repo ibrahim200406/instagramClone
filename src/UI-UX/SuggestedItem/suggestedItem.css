@@ -1,0 +1,18 @@
+.suggestedItem {
+    padding: 0.5rem 0;
+}
+
+.suggestedItem .suggestedProfileImage img {
+    width: 55px;
+}
+
+.suggestedItem .suggestedInfos .suggestedInfo .username {
+    font-weight: 600;
+    height: 19px;
+    font-size: 14px;
+}
+
+.suggestedItem .suggestedInfos .suggestedInfo span {
+    color: #7B7B7B;
+    font-size: 13px;
+}
